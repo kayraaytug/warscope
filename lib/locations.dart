@@ -1,15 +1,14 @@
 import 'package:latlong2/latlong.dart';
 
 final Map<String, LatLng> countryCoordinates = {
-    'Ukrayna': LatLng(31.0461, 34.8516),
-    'Rusya': LatLng(15.5007, 32.5599),
-    'Suriye': LatLng(-1.9403, 29.8739),
-    'Filistin': LatLng(43.4023, 45.6982), // Çeçenistan
-    'İsrail': LatLng(42.6026, 20.9030),
-    'Irak': LatLng(-4.0383, 21.7587), // Demokratik Kongo Cumhuriyeti
-    'Yemen': LatLng(31.7683, 35.2137), // Kudüs
+    'Ukrayna': LatLng(48.3794, 31.1656), // Corrected coordinates for Ukraine
+    'Rusya': LatLng(61.5240, 105.3188), // Corrected coordinates for Russia
+    'Suriye': LatLng(34.8021, 38.9968), // Corrected coordinates for Syria
+    'Filistin': LatLng(31.9522, 35.2332), // Corrected coordinates for Palestine
+    'İsrail': LatLng(31.0461, 34.8516), // Corrected coordinates for Israel
+    'Irak': LatLng(33.2232, 43.6793), // Corrected coordinates for Iraq
+    'Yemen': LatLng(15.5525, 48.5164), // Corrected coordinates for Yemen
 };
-
 
 final palestine_1 = [
         LatLng(32.393992, 35.545665),
