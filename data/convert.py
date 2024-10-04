@@ -14,7 +14,7 @@ for filename in os.listdir(script_dir):
         df = pd.read_csv(csv_path)
         
         # Convert DataFrame to JSON
-        json_data = df.to_json(orient="records", force_ascii=False)
+        json_data = df.to_json(orient="index", force_ascii=False)
         
         # Create a corresponding JSON file
         json_filename = filename.replace(".csv", ".json")

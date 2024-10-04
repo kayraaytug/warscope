@@ -1,20 +1,13 @@
 import 'package:latlong2/latlong.dart';
 
 final Map<String, LatLng> countryCoordinates = {
-    'İsrail': LatLng(31.0461, 34.8516),
-    'Sudan': LatLng(15.5007, 32.5599),
-    'Ruanda Soykırımı Savaşı': LatLng(-1.9403, 29.8739),
-    'Çeçen Savaşı': LatLng(43.4023, 45.6982), // Çeçenistan
-    'Kosova Savaşı': LatLng(42.6026, 20.9030),
-    'Kongo Savaşı': LatLng(-4.0383, 21.7587), // Demokratik Kongo Cumhuriyeti
-    'İntifada Savaşı': LatLng(31.7683, 35.2137), // Kudüs
-    'Irak Savaşı': LatLng(33.3152, 44.3661), // Bağdat
-    'Darfur Savaşı': LatLng(13.45, 25.2333), // Darfur Bölgesi
-    'Suriye İç Savaşı': LatLng(33.5138, 36.2765), // Şam
-    'Libya İç Savaşı': LatLng(32.8872, 13.1913), // Trablus
-    'Ukrayna Rusya Savaşı': LatLng(50.4501, 30.5234), // Kiev
-    'Yemen İç Savaşı': LatLng(15.5527, 48.5164), // Sana
-    'Etiyopya Tigray Savaşı': LatLng(13.4967, 39.4757), // Mekele, Tigray Bölgesi
+    'Ukrayna': LatLng(31.0461, 34.8516),
+    'Rusya': LatLng(15.5007, 32.5599),
+    'Suriye': LatLng(-1.9403, 29.8739),
+    'Filistin': LatLng(43.4023, 45.6982), // Çeçenistan
+    'İsrail': LatLng(42.6026, 20.9030),
+    'Irak': LatLng(-4.0383, 21.7587), // Demokratik Kongo Cumhuriyeti
+    'Yemen': LatLng(31.7683, 35.2137), // Kudüs
 };
 
 

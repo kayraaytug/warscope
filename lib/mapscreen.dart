@@ -19,6 +19,26 @@ class _MapScreenState extends State<MapScreen> {
   final LayerHitNotifier<HitValue> _hitNotifier = ValueNotifier(null);
   List<HitValue>? _prevHitValues;
   List<Polygon<HitValue>>? _hoverGons;
+List<Icon> iconList = [
+  Icon(Icons.airplane_ticket),
+  Icon(Icons.local_gas_station),
+  Icon(Icons.question_answer),
+  Icon(Icons.attach_money),
+  Icon(Icons.question_answer),
+  Icon(Icons.water),
+  Icon(Icons.cleaning_services),
+  Icon(Icons.school),
+  Icon(Icons.fastfood),
+  Icon(Icons.work),
+  Icon(Icons.health_and_safety),
+  Icon(Icons.electrical_services),
+  Icon(Icons.warning),
+  Icon(Icons.people_alt),
+  Icon(Icons.psychology),
+  Icon(Icons.group),
+    Icon(Icons.psychology),
+  Icon(Icons.group),
+];
 
   final _polygonsRaw = <Polygon<HitValue>>[
     Polygon(
@@ -136,11 +156,9 @@ class _MapScreenState extends State<MapScreen> {
                           entry.value,
                         );
                       },
-                      child: Icon(
-                        Icons.location_on,
-                        color: Colors.red,
-                        size: 40.0,
-                      ),
+                      child: Container(
+                  child: Image.asset('assets/icon48_green.png'),
+                ),
                     ),
                   );
                 }).toList(),
@@ -215,72 +233,62 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 
-  void _openTouchedGonsModal(
-    String eventType,
-    List<HitValue> tappedLines,
-    LatLng coords,
-  ) {
-    final warData = {
-      'Israel-Palestine Conflict': wardata_israel,
-      'Sudan Civil War': wardata_sudan,
-      // Add other conflict maps here
-    };
+void _openTouchedGonsModal(
+  String eventType,
+  List<HitValue> tappedLines,
+  LatLng coords,
+) {
 
-    final tappedConflict = tappedLines.first.title;
-    final conflictData = warData[tappedConflict];
 
-    showModalBottomSheet<void>(
-      context: context,
-      builder: (context) => Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              tappedConflict,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            if (conflictData != null)
-              Expanded(
-                child: ListView.builder(
-                  itemCount: conflictData.length,
-                  itemBuilder: (context, index) {
-                    final category = conflictData.keys.elementAt(index);
-                    final details = conflictData[category];
-                    return ListTile(
-                      title: Text(
-                        category,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      subtitle: details != null
-                          ? Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: details.entries
-                                  .map((entry) =>
-                                      Text("${entry.key}: ${entry.value}"))
-                                  .toList(),
-                            )
-                          : const Text('No data available'),
-                      dense: true,
-                    );
-                  },
-                ),
-              ),
-            const SizedBox(height: 8),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: SizedBox(
-                width: double.infinity,
-                child: OutlinedButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: const Text('Close'),
-                ),
+  // Extract the conflict title from the tapped polygon
+  final tappedConflict = tappedLines.first.title;
+  final conflictData = warData[tappedConflict];
+
+  showModalBottomSheet<void>(
+    context: context,
+    builder: (context) => Padding(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            tappedConflict,
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 8),
+          if (conflictData != null)
+            Expanded(
+              child: ListView.builder(
+                itemCount: conflictData.length,
+                itemBuilder: (context, index) {
+                  final category = conflictData.keys.elementAt(index);
+                  final value = conflictData[category];
+                  return ListTile(
+                    leading: iconList[index],
+                    title: Text(
+                      category,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(value.toString()),
+                    dense: true,
+                  );
+                },
               ),
             ),
-          ],
-        ),
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Close'),
+              ),
+            ),
+          ),
+        ],
       ),
-    );
+    ),
+  );
   }
 }

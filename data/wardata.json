@@ -1,0 +1,80 @@
+{
+    "kosovo_war": {
+        "Petrol Tuketimi (milyon varil/gun)": "15",
+        "Cevher ve Mineral Kullanimi (milyon ton/yil)": "5",
+        "Mali Harcamalar (Savas) (milyar USD)": "60",
+        "Karbon Salinimi (ton/yil)": "1,200,000",
+        "Temiz Suya Erisim (yüzde)": "30",
+        "Hijyen Durumu (yüzde)": "40",
+        "Egitime Erisim (Okullasma Orani)": "45",
+        "Yiyecek Kaynaklarina Erisim (yüzde)": "50",
+        "Issizlik Orani (yüzde)": "50",
+        "Saglik Hizmetlerine Erisim (yüzde)": "35",
+        "Elektrik Kesintileri (Gunluk saat)": "12",
+        "Gida Guvensizligi (yüzde)": "45",
+        "Multeci Sayisi (milyon)": "1.5",
+        "Psikolojik Rahatsizliklar (yüzde)": "35",
+        "Topluma Entegrasyon (yüzde)": "25",
+        "notes": [
+            "NATO saldırıları sırasında yakıt tüketimi arttı.",
+            "Çatışmalar nedeniyle madencilik faaliyetleri azaldı.",
+            "Savaş sonrası yeniden yapılanma maliyetleri yüksekti.",
+            "Çevresel kirlilik önemli sorunlar yarattı."
+        ],
+        "sources": [
+            "https://academic.oup.com/book/26245",
+            "https://www.unep.org/resources/report/kosovo-conflict-consequences-environment-and-human-settlements",
+            "https://documents1.worldbank.org/curated/en/547411468756297145/pdf/multi-page.pdf"
+        ]
+    },
+    "congo_war": {
+        "Petrol Tuketimi (milyon varil/gun)": "10",
+        "Cevher ve Mineral Kullanimi (milyon ton/yil)": "7",
+        "Mali Harcamalar (Savas) (milyar USD)": "100",
+        "Karbon Salinimi (ton/yil)": "2,000,000",
+        "Temiz Suya Erisim (yüzde)": "20",
+        "Hijyen Durumu (yüzde)": "30",
+        "Egitime Erisim (Okullasma Orani)": "40",
+        "Yiyecek Kaynaklarina Erisim (yüzde)": "45",
+        "Issizlik Orani (yüzde)": "60",
+        "Saglik Hizmetlerine Erisim (yüzde)": "30",
+        "Elektrik Kesintileri (Gunluk saat)": "15",
+        "Gida Guvensizligi (yüzde)": "50",
+        "Multeci Sayisi (milyon)": "4",
+        "Psikolojik Rahatsizliklar (yüzde)": "50",
+        "Topluma Entegrasyon (yüzde)": "25",
+        "notes": [
+            "Madenlerin çıkarımı savaş sırasında azaldı.",
+            "Çevre kirliliği madencilikten dolayı arttı."
+        ],
+        "sources": [
+            "https://www.un.org/en/africarenewal/congo-war",
+            "https://www.brookings.edu/on-the-record/congo-crisis/"
+        ]
+    },
+    "ruanda_genocide": {
+        "Petrol Tuketimi (milyon varil/gun)": "3",
+        "Cevher ve Mineral Kullanimi (milyon ton/yil)": "1",
+        "Mali Harcamalar (Savas) (milyar USD)": "20",
+        "Karbon Salinimi (ton/yil)": "300,000",
+        "Temiz Suya Erisim (yüzde)": "25",
+        "Hijyen Durumu (yüzde)": "30",
+        "Egitime Erisim (Okullasma Orani)": "35",
+        "Yiyecek Kaynaklarina Erisim (yüzde)": "40",
+        "Issizlik Orani (yüzde)": "70",
+        "Saglik Hizmetlerine Erisim (yüzde)": "25",
+        "Elektrik Kesintileri (Gunluk saat)": "18",
+        "Gida Guvensizligi (yüzde)": "60",
+        "Multeci Sayisi (milyon)": "2",
+        "Psikolojik Rahatsizliklar (yüzde)": "70",
+        "Topluma Entegrasyon (yüzde)": "20",
+        "notes": [
+            "Soykırım sonrası yeniden yapılanma çok zor oldu.",
+            "Temel ihtiyaçlara erişim kısıtlıydı."
+        ],
+        "sources": [
+            "https://www.un.org/en/preventgenocide/rwanda",
+            "https://www.hrw.org/report/2004/04/01/lasting-wounds/consequences-genocide-and-war-rwanda-and-burundi"
+        ]
+    }
+}
