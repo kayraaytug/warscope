@@ -67937,7 +67937,7 @@ I(a){var s=null
 return new A.uU(new A.uQ(s),"Warscope",A.agn(s,A.aiB(B.W,s,s,B.Gc),!0),s)}}
 A.uQ.prototype={
 ae(){var s,r,q,p,o,n=null,m=A.atV(n,n),l=$.aB(),k=A.b([A.ds(B.Bg,n),A.ds(B.Bo,n),A.ds(B.kj,n),A.ds(B.Bj,n),A.ds(B.kj,n),A.ds(B.Bs,n),A.ds(B.Bk,n),A.ds(B.Bq,n),A.ds(B.Bm,n),A.ds(B.Bt,n),A.ds(B.Bn,n),A.ds(B.Bl,n),A.ds(B.Br,n),A.ds(B.Bp,n),A.ds(B.ki,n),A.ds(B.kg,n),A.ds(B.ki,n),A.ds(B.kg,n)],t.Th),j=$.aqP(),i=t._0
-j=A.pb(B.aF,2,A.Y(102,76,175,80),!1,new A.i8("","Yemen"),n,j,i)
+j=A.pb(B.aF,2,A.Y(102,76,175,80),!1,new A.i8("","Ukrayna"),n,j,i)
 s=$.aqO()
 s=A.pb(B.aF,2,A.Y(102,255,152,0),!1,new A.i8("","Suriye"),n,s,i)
 r=$.aqM()
